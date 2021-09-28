@@ -7,6 +7,7 @@ import Flex from "./Flex";
 const StyledDropdownItem = styled.li<DropdownItemProps>`
   width: 100%;
   height: 100%;
+  min-height: 210px;
   padding: 5px 20px;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -15,9 +16,6 @@ const StyledDropdownItem = styled.li<DropdownItemProps>`
   
   &:hover {
     background: ${({isSelected}) => isSelected ? '#46462F' : '#3d3d3d'};
-  }
-  @media screen and (max-width: 414px) {
-    min-height: 210px;
   }
 `
 

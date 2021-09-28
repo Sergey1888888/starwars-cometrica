@@ -6,7 +6,7 @@ const StyledList = styled.ul`
   width: 8rem;
   min-width: 320px;
   max-width: 400px;
-  max-height: 195px;
+  max-height: 210px;
   scroll-snap-type: y mandatory;
   list-style: none;
   margin-top: 10px;

@@ -6,7 +6,7 @@ import DropdownItem from "./DropdownItem";
 
 const StyledDropdown = styled.div<StyledDropdownProps>`
   width: 8rem;
-  min-width: 335px;
+  min-width: 320px;
   max-width: 400px;
   height: 5rem;
   background: #2E2E2E;
@@ -23,9 +23,6 @@ const StyledDropdown = styled.div<StyledDropdownProps>`
   
   &:hover {
     background-color: #3d3d3d;
-  }
-  @media screen and (max-width: 414px) {
-    min-width: 320px;
   }
 `
 
