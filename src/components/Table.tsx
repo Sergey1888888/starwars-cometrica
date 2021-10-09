@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {ICompared} from "../types/starship";
-import {isSameFirstValues} from "../helpers/sameFirstValues";
+import {isSameValue} from "../helpers/sameValue";
 
 const StyledTable = styled.div<StyledTableProps>`
   display: grid;
@@ -40,7 +40,7 @@ const Table: React.FC<StyledTableProps> = (props) => {
     return (
         <StyledTable {...props}>
             {props.items.map((item, index) => <StyledCell background='#535353' key={index}>{item.name}</StyledCell>)}
-            {props.items.map((item, index) => <StyledCell background={isSameFirstValues(props.items, index) ? '#5F560F' : index === 0 ? '#2A3224' : '#442B2B'} key={index}>{item.result}</StyledCell>)}
+            {props.items.map((item, index) => <StyledCell background={isSameValue(props.items, index) ? '#5F560F' : index === 0 ? '#2A3224' : '#442B2B'} key={index}>{item.result}</StyledCell>)}
         </StyledTable>
     );
 };
